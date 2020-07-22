@@ -1,0 +1,16 @@
+{
+    "name": "dll.im 短网址生成|二维码生成",
+    "description": "dll.im 短网址生成|二维码生成",
+    "version": "1.0",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_popup": "index.html",
+        "default_icon": "icon.png"
+    },
+    "permissions": [
+        "https://dll.im/",
+        "tabs",
+        "webRequest",
+        "webRequestBlocking"
+    ]
+}
