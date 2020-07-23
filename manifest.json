@@ -7,6 +7,9 @@
         "default_popup": "index.html",
         "default_icon": "icon.png"
     },
+    "icons": {
+        "128": "icon.png"
+    },
     "permissions": [
         "https://dll.im/",
         "tabs",
