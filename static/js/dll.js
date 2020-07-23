@@ -44,8 +44,8 @@ window.onload = function () {
     var copyurl = document.getElementById("copyurl");
     var showShortQrcode = document.getElementById("showShortQrcode");
     var qrcode = new QRCode(document.getElementById("qrcode"), {
-        width: 240,
-        height: 240
+        width: 256,
+        height: 256
     });
     copyurl.addEventListener("click", function () {
         var shortUrl = document.getElementById("shortUrl");
