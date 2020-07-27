@@ -12,8 +12,6 @@
     },
     "permissions": [
         "https://dll.im/",
-        "tabs",
-        "webRequest",
-        "webRequestBlocking"
+        "tabs"
     ]
 }
