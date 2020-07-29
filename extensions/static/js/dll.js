@@ -41,20 +41,10 @@ function getData(qrcode, url) {
 }
 
 window.onload = function () {
-    var copyurl = document.getElementById("copyurl");
     var showShortQrcode = document.getElementById("showShortQrcode");
     var qrcode = new QRCode(document.getElementById("qrcode"), {
         width: 256,
         height: 256
-    });
-    copyurl.addEventListener("click", function () {
-        var shortUrl = document.getElementById("shortUrl");
-        if (!shortUrl.value) {
-            return
-        }
-        shortUrl.select(); // 选择对象
-        document.execCommand("Copy"); // 执行浏览器复制命令
-        document.getElementById("notice").innerText = "复制成功！"
     });
     showShortQrcode.addEventListener("click", function () {
         var shortUrl = document.getElementById("shortUrl");
