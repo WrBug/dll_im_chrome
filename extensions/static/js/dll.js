@@ -12,10 +12,11 @@ function getData(qrcode, url) {
     var patt1 = new RegExp("https?://[^\s]*");
     var patt2 = new RegExp("https?://dll.im/[^\s]*");
     if (!patt1.test(url)) {
-        document.getElementById("shortUrl").value = ""
+        document.getElementById("shortUrl").value = "仅支持网址生成"
         return
     }
     if(patt2.test(url)){
+        document.getElementById("shortUrl").value = ""
         return
     }
     var settings = {
@@ -51,6 +52,8 @@ window.onload = function () {
         if (!shortUrl.value) {
             return
         }
+        var elText = document.getElementById("originUrl");
+        elText.value=shortUrl.value;
         getData(qrcode,shortUrl.value)
     });
     var originUrl = document.getElementById("originUrl");
